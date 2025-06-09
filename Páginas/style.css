@@ -1,0 +1,219 @@
+
+*{
+    margin: 0
+}
+
+
+p { font-family: arial;}
+
+.fondo {
+    background-color: #ecd7bc;
+}
+
+.navbar-brand {
+    display: inline;
+      width: 100px;
+      height: auto;} 
+.opciones {
+    display: flex;
+    justify-content: center;
+}
+.nav-link {
+    color: #CC9933;
+}
+.nav-link:hover {
+    color:#FFF
+}
+.iconos img {
+    width: 35px;
+    padding-right: 10px;
+ }
+
+.slide {
+    display: flex;
+    overflow: hidden; 
+}
+
+
+.slide img {
+        width: 100%;
+        object-fit: cover;
+        animation: slide 10s infinite alternate ease-in-out;
+    }
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    45% {margin-left: 0%;}
+
+    55% {margin-left: -50%;}
+    100% {margin-left: -50%;}
+}
+
+.beneficios {
+    background-color:#ecd7bc;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.beneficios figure {
+     display: flex;
+    justify-content: center;
+    padding-top: 10px;
+   
+}
+
+.beneficios img {
+    height: 35px;
+    display: flex; 
+    padding-right: 15px;
+}
+
+
+.mas-vendido {
+    background-color: rgb(255, 255, 255);
+    padding:  25px;
+}
+
+h2 {
+    text-align: center;
+    font-family: arial;
+    padding: 15px;
+}
+
+.galeria-productos {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.producto {
+    width: 220px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 15px;
+ }
+
+ .producto img {
+    width: 100%;
+ }
+
+ .producto button {
+    background: #fdc371;
+    color: rgb(255, 255, 255);
+    border: none; 
+    border-radius: 15px;
+    padding: 08px;
+    cursor: pointer;
+ }
+
+
+ /* Pie de página*/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px auto;
+    background-color:#ecd7bc;
+    grid-template-areas: "footer1""footer2";
+ }
+
+.contenedor-superior {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-row: 80px;
+    grid-area: footer1;
+    gap: 30px;
+    padding: 20px;
+    padding-right: 30px;
+}
+.logo-pie  {
+    width: 200px;
+    padding: 30px;
+}
+
+.libro-reclamaciones {
+    width: 50%;
+    padding-left: 20px ;
+}
+
+h3 {
+    text-align: center;
+    font-family: arial; 
+    padding: 15px;
+}
+.contenedor-inferior {
+    grid-area: footer2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 15px ;
+
+}
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+ }
+
+.redes-sociales img {
+    width: 30px;
+    margin-inline: 05px;
+}
+
+/* Página perros*/
+.portada {
+    background-color: #a283eb;
+    font-family: tahoma;
+    font-size:xx-large;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.portada h1 {
+    color: #FFF;
+    display: grid;
+    align-items:center;
+}
+.portada img {
+    height: 300px;
+}
+
+/*Formulario*/
+.formulario {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario form {
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+    font-family: arial;
+    background-color: #ececec;;
+    padding: 35px;
+    border-radius: 25px;
+    gap: 05px;
+    box-shadow: 0 0 10px rgb(110, 109, 109);
+    
+}
+.formulario label {
+    font-size: 14px;
+}
+
+.formulario input[type="submit"] {
+    background-color: #fcc46f;
+    border: none;
+    padding: 06px;
+    border-radius: 20px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    font-size: medium;
+}
