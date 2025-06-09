@@ -24,11 +24,13 @@ p { font-family: arial;}
 .nav-link:hover {
     color:#FFF
 }
+
+
 .iconos img {
     width: 35px;
     padding-right: 10px;
  }
-
+/*
 .slide {
     display: flex;
     overflow: hidden; 
@@ -48,6 +50,8 @@ p { font-family: arial;}
     55% {margin-left: -50%;}
     100% {margin-left: -50%;}
 }
+
+*/
 
 .beneficios {
     background-color:#ecd7bc;
