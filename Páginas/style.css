@@ -1,6 +1,7 @@
 
-*{
-    margin: 0
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
@@ -9,12 +10,16 @@ p { font-family: arial;}
 .fondo {
     background-color: #ecd7bc;
 }
+.navbar-collapse {
+  transition: height 0.3s ease;
+  will-change: height;
+}
 
-.navbar-brand {
+.navbar-brand img {
     display: inline;
       width: 100px;
       height: auto;} 
-.opciones {
+.paginas {
     display: flex;
     justify-content: center;
 }
@@ -24,11 +29,9 @@ p { font-family: arial;}
 .nav-link:hover {
     color:#FFF
 }
-
-
 .iconos img {
-    width: 35px;
-    padding-right: 10px;
+    width: 36px;
+    padding-right: 12px;
  }
 /*
 .slide {
@@ -59,13 +62,17 @@ p { font-family: arial;}
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    
 }
 
 .beneficios figure {
      display: flex;
+      align-items: center;
     justify-content: center;
     padding-top: 10px;
+}
+.beneficios figure p {
+     display: block;
+     margin: 0 auto;
    
 }
 
@@ -79,14 +86,40 @@ p { font-family: arial;}
 .mas-vendido {
     background-color: rgb(255, 255, 255);
     padding:  25px;
+    color: #CC9933;
 }
 
 h2 {
     text-align: center;
     font-family: arial;
     padding: 15px;
+    font-weight: 800;
 }
 
+
+@media (min-width: 300px) {
+    .galeria-productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    gap: 15px
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+.galeria-productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    }
+}
+
+
+/*
 .galeria-productos {
     display: flex;
     justify-content:space-around;
@@ -94,11 +127,13 @@ h2 {
     padding-bottom: 10px;
 
 }
+    */
 .producto {
     width: 220px;
     background-color: rgb(240, 240, 240);
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
+    
  }
 
  .producto img {
@@ -115,15 +150,85 @@ h2 {
  }
 
 
- /* Pie de página*/
-
+ /* Pie de página-celulares*/
+@media (min-width: 300px) {
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ecd7bc; 
+}
+
+
+.logo-pie  {
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.libro-reclamaciones {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h4 {
+    text-align: center;
+    font-family: arial;
+
+}
+
+.contenedor-superior p {
+    text-align: center;
+}
+
+
+.contenedor-superior {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-inferior {
+    display: flex;
+     flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+.redes-sociales {
+    padding: 12px;
+    
+ }
+
+.redes-sociales img {
+    width: 32px;
+    margin-inline: 05px;
+    justify-content: center;
+}
+
+}
+
+
+
+
+
+
+/* Pie de página-escritorio*/
+@media (min-width: 1024px) {
+
+    footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 220px auto;
     background-color:#ecd7bc;
     grid-template-areas: "footer1""footer2";
- }
+    }
 
 .contenedor-superior {
     display: grid;
@@ -134,20 +239,23 @@ footer {
     padding: 20px;
     padding-right: 30px;
 }
+.contenedor-superior p {
+    text-align:justify;
+}
+ 
+
 .logo-pie  {
-    width: 200px;
+    width: 250px;
     padding: 30px;
 }
 
 .libro-reclamaciones {
     width: 50%;
-    padding-left: 20px ;
 }
 
-h3 {
+h4 {
     text-align: center;
     font-family: arial; 
-    padding: 15px;
 }
 .contenedor-inferior {
     grid-area: footer2;
@@ -168,6 +276,8 @@ h3 {
     width: 30px;
     margin-inline: 05px;
 }
+
+} 
 
 /* Página perros*/
 .portada {
