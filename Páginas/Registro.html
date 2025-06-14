@@ -10,24 +10,52 @@
 </head>
 <body>
     <header>
-        <section class="menu"> 
-        <div class="logo" ><img src="../Imágenes/logo.png" alt="logo"></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Perros.html">Perro</a></li>
-                <li><a href="Gatos.html">Gato</a></li>
-                <li><a href="#">Otras mascotas</a></li>
-                <li><a href="#">Pet lovers</a></li>
-                <li><a href="#">Ofertas</a></li>
-            </ul>
+      <nav class="navbar navbar-expand-lg fondo">
+        <div class="container-fluid">
 
-        <div class="iconos">
-            <a href="Registro.html"><img src="../Imágenes/Registrarse.png" alt="Registrarse"></a>
-            <a href="#"><img src="../Imágenes/carrito.png" alt="Carrito"></a>
-        </div>
-        </nav>
-        </section>
+          <a class="navbar-brand" href="../index.html">
+            <img src="../Imágenes/logo.png" alt="logo" width="100">
+          </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+       <div class="collapse navbar-collapse paginas" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Páginas/Perros.html">Perros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Páginas/Gatos.html">Gatos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Otras mascotas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pet Lovers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Páginas/tiendas.html">Tiendas</a>
+        </li>
+      </ul>
+      
+
+  </div>
+  <div class="contenedor-iconos">
+    <a class="iconos" href="../Páginas/Registro.html"> <img src="../Imágenes/Registrarse.png" alt="Registrarse"></a>
+    <a class="iconos" href="#"> <img src="../Imágenes/carrito.png" alt="Carrito"></a> 
+    
+  </div>
+
+    </div>
+
+</nav>
     </header>
 
 <!--Formulario-->
@@ -50,8 +78,10 @@
             <label for="password">Contraseña:</label>
             <input type="password"name="Email" placeholder="Debe tener almenos 8 carácteres">
 
+            <div class="checkbox">
             <input type="checkbox"name="terminos-condiciones">
-            <label for="terminos-condiciones">He leído y acepto términos y condiciones y la política de datos personales.</label>
+            <label for="terminos-condiciones">He leído y acepto términos y condiciones.</label>
+        </div>
 
             <input type="submit" value="Crear cuenta">
         </form>
@@ -64,19 +94,18 @@
 <footer>
     <div class="contenedor-superior">
     <div><img class="logo-pie" src="../Imágenes/logo.png" alt="logo"></div>
-<div> <h3> Contacto </h3>
+<div> <h4> Contacto </h4>
 <p>Teléfono: 999 999 999 <br>Mail: compras@petshop.com <br> 
     Horario de atención:<br> Lunes a sábados de 8am-7pm
 </p></div>
 
-<div> <h3> Nuestras tiendas</h3>
-<p>Sede Surco <br> Sede Barranco <br>Sede San Miguel </p></div>
+<div> <h4> Nuestras tiendas</h4>
+<p>Sede Surco <br> Sede Barranco <br>Sede San Miguel <br>Sede Lince</p></div>
 
-<div> <h3> Servicio al cliente</h3> 
+<div> <h4> Servicio al cliente</h4> 
     <p>Términos y condiciones <br> Política de privacidad</p>
 <img class="libro-reclamaciones" src="../Imágenes/LIBRO-RECLAMACINES.png" alt="libro de reclamaciones"></div>
 </div>
-
 
 <div class="contenedor-inferior">
  <div> <p> &copy; Todos los derechos reservados</p></div>
