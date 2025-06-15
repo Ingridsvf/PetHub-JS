@@ -20,10 +20,24 @@ p { font-family: arial;}
     display: inline;
       width: 100px;
       height: auto;} 
+
+@media (min-width: 300px) {
+    .paginas {
+        display: flex;
+         flex-direction: column;
+
+    }
+}
+
+@media (min-width: 1024px) {
 .paginas {
     display: flex;
-    justify-content: center;
-}
+    flex-direction: row;
+    justify-content:space-around;
+
+}}
+
+
 .nav-link {
     color: #CC9933;
 }
