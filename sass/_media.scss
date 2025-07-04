@@ -1,0 +1,162 @@
+@import "mixin";
+@import "variables";
+
+
+
+/*CELULARES*/
+@media (min-width: 300px) {
+footer {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px}
+   
+    .contenedor-inferior {
+    display: flex;
+     flex-direction: column-reverse;
+    padding: 20px;
+} 
+.libro-reclamaciones {
+    width: 30%;
+}
+
+/*sección lo más vendido*/
+    .galeria-productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    }
+    .boton {
+    @include button (12px);
+    }
+
+
+
+/* blog*/
+ 
+    .blog-div {
+    @include flex-phone
+
+}
+
+/*Newsletter*/
+    .imagen-newsletter {
+        display: none;
+    }
+.texto-newsletter{
+    @include flex-phone;
+    color: #fff;
+
+}
+
+/*Página perros - gatos*/
+.portada img {
+    height: 150px;
+}
+h1 {
+    font-size: medium;
+
+}
+
+/*Tiendas*/
+.sedes-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px
+}
+
+/*registro*/
+    .animacion-huellas {
+    display: none;
+} 
+
+}
+
+
+
+/*COMPUTADORA*/
+/*Footer*/
+@media (min-width: 1024px) {
+    footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 50px;
+    grid-template-areas: 
+    "footer1 footer1 footer1 footer1"
+    "derechos derechos redes redes";
+    text-align: justify;
+    align-items: start;
+    padding-top: 30px;
+    }
+
+.libro-reclamaciones {
+    width: 45%;
+    padding-left: 30px;
+}
+
+.redes-sociales {
+    grid-area: redes;
+    grid-column: 4/4;
+    display: flex;
+    justify-content: right;
+
+ }
+
+/*sección lo más vendido*/
+.galeria-productos {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+    padding: 30px;
+    }
+ .boton {
+    @include button (medium);
+    }
+
+
+
+/* blog*/
+    .blog-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+}
+
+
+/*newsletter*/
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 80%;
+
+p{
+    color: #fff;
+}}
+.imagen-newsletter {
+        display:flex;
+    }
+
+
+/*Página perros-gatos*/
+.portada img {
+    height: 300px;
+}
+h1 {
+    font-size: xx-large;
+}
+
+/*Tiendas*/
+.sedes-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+}
+/*Registro*/
+.animacion-huellas {
+    display:inline;
+} 
+}

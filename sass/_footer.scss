@@ -1,0 +1,25 @@
+@use "variables";
+@import "mixin";
+
+
+footer {
+background-color: $primary-color;
+font-family: $font;
+padding: 15px;
+.logo-pie  {
+    width: 250px;
+    padding: 30px;
+}
+
+
+.redes-sociales img {
+    width: 32px;
+    margin-inline: 05px;
+    justify-content: center;
+}
+}
+
+
+
+
+

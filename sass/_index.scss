@@ -1,0 +1,128 @@
+@import "mixin";
+@import "variables";
+
+body {
+    p {
+    font-family: $font;
+    display: block;
+    margin: 0 auto;
+    }
+    h1{
+     color: #FFF;
+    display: grid;
+    align-items:center;
+    font-weight: 700;
+
+    }
+    h2 {
+    text-align: center;
+    font-family: $font;
+    padding: 15px;
+    font-weight: 800;
+    color: $secundary-color;
+}
+section {
+    padding: 30px;
+}
+}
+
+.beneficios {
+    @include beneficios-flex;
+    img {
+    height: 35px;
+    padding-right: 10px;
+}
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+}
+
+/*sección lo más vendido*/
+.galeria-productos {
+    display: grid;
+    text-align: center;
+img {
+    width: 100%;
+}
+    .producto {
+    border-radius: 12px;
+    background-color: #FFF;
+    padding: 15px;
+    box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
+ }
+}
+
+/* blog*/
+.blog {
+    background-color: #e0f0f4;
+
+    figure {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: $font;
+    font-weight: 700;
+}
+img {
+width: 80%;
+border-radius: 15px;
+cursor: pointer;
+&:hover {
+    transform: scale(1.1);
+}
+}
+
+}
+/*newsletter*/
+.newsletter {
+    display: flex;
+    justify-content: center;
+    background-color: #f16d5e;
+    padding: 0px;
+
+    button {
+      @include button(medium);
+      animation:bounce 1s ease-in-out infinite;
+      &:hover{
+        background-color:#fff;
+        color:#f16d5e;
+      }
+    }
+}
+
+
+
+/*Gatos-Perros*/
+.portada {
+    background-color: #a283eb;
+    font-family: tahoma;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+/*Tiendas*/
+.sedes-div {
+    figure {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 08px;
+    font-weight: 700;
+    p{
+    font-weight: 400;}
+}
+img {
+width: 25%;
+border-radius: 15px;
+cursor: pointer;
+&:hover {
+    transform: scale(1.1);}
+}
+
+}

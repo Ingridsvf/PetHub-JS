@@ -1,0 +1,67 @@
+@use "variables";
+@import "mixin";
+
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #ded6f1, #ecebed);
+h2 {
+    color: #fff;
+}
+form {
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+    font-family: $font;
+    background-color:$third-color;
+    color: #a4670a;
+    padding: 35px;
+    border-radius: 25px;
+    gap: 05px; 
+}
+.checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+input
+{border-radius: 10px;
+padding: 05px;
+border:none;
+
+    &:hover {
+    background-color: #fae882}
+}
+
+[type="submit"] {
+    @include button (medium);
+    background-color: $secundary-color;
+}
+}
+
+ .animacion-huellas {
+    width: 20%;
+
+    img {
+        width: 35%;
+        padding-left: 50px; }
+    .izquierda {
+        animation: fade 9s infinite ,mover 9s steps(5) infinite;
+        animation-delay: 0s
+    }
+    .derecha {
+        animation:fade 9s infinite , mover 9s steps(5) infinite;
+       animation-delay: 1s
+    }
+    .izquierda2 {
+        animation:fade 9s infinite , mover 9s steps(5) infinite;
+        animation-delay: 1.5s
+    }
+    .derecha2 {
+        animation: fade 9s infinite , mover 9s steps(5) infinite;
+       animation-delay: 2s
+    }
+ }
+

@@ -1,0 +1,18 @@
+/*Botón Newsletter-inddex */
+@keyframes bounce {
+    0%{transform:translateY(0);}
+    50%{transform:translateY(15px);}
+    100%{transform:translateY(0);}
+}
+
+/*Registro */
+ @keyframes fade {
+    0% {opacity:1;}
+    90% {opacity: 1;}
+    100% {opacity:0;}
+ }
+
+@keyframes mover {
+    0%  {transform:translateX(0) translateY(0);}
+  100%  {transform:translateX(300px) translateY(-300px);}
+}
