@@ -90,6 +90,20 @@ body section {
   padding: 15px;
   box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
 }
+.galeria-productos .producto .boton {
+  font-size: medium;
+  background: #fcc46f;
+  font-family: "montserrat";
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  padding-inline: 15px;
+  cursor: pointer;
+}
+.galeria-productos .producto .boton:hover {
+  background-color: #CC9933;
+}
 
 /* blog*/
 .blog {
@@ -345,17 +359,6 @@ body section {
     gap: 25px;
     padding: 30px;
   }
-  .boton {
-    font-size: medium;
-    background: #fcc46f;
-    font-family: "montserrat";
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    padding-inline: 15px;
-    cursor: pointer;
-  }
   /* blog*/
   .blog-div {
     display: grid;
@@ -431,7 +434,7 @@ body section {
 footer {
   background-color: #ecd7bc;
   font-family: "montserrat";
-  padding: 15px;
+  padding: 40px 15px 15px 15px;
 }
 footer .logo-pie {
   width: 250px;
