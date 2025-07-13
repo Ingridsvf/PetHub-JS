@@ -1,0 +1,30 @@
+@import "variables";
+
+.otros-portada {
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    p {
+        font-family: tahoma;
+        font-weight: 700;
+    }
+    img {
+        width: 40%;
+    }
+}
+
+.peces-div {
+    background-color: #dca865;
+}
+.hamsters-div {
+    background-color:$third-color ;
+}
+.aves-div {
+    background-color: #f0c2cf;
+}
+.conejos-div {
+    background-color: #f3f581;
+}

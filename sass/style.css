@@ -1,7 +1,6 @@
 @charset "UTF-8";
 header {
   background-color: #ecd7bc;
-  font-family: "montserrat";
 }
 header .nav-link {
   color: #CC9933;
@@ -36,8 +35,11 @@ header .iconos img {
 /*Sección-beneficios-inicio*/
 /*botones*/
 /*características flex para celular */
+body {
+  font-family: "arial";
+}
 body p {
-  font-family: "montserrat";
+  font-family: "arial";
   display: block;
   margin: 0 auto;
 }
@@ -49,7 +51,7 @@ body h1 {
 }
 body h2 {
   text-align: center;
-  font-family: "montserrat";
+  font-family: "arial";
   padding: 15px;
   font-weight: 800;
   color: #CC9933;
@@ -64,6 +66,8 @@ body section {
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  margin: 30px;
+  border-radius: 15px;
 }
 .beneficios img {
   height: 35px;
@@ -91,9 +95,9 @@ body section {
   box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
 }
 .galeria-productos .producto .boton {
-  font-size: medium;
+  font-size: small;
   background: #fcc46f;
-  font-family: "montserrat";
+  font-family: "arial";
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
@@ -114,7 +118,7 @@ body section {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  font-family: "montserrat";
+  font-family: "arial";
   font-weight: 700;
 }
 .blog img {
@@ -133,10 +137,10 @@ body section {
   background-color: #f16d5e;
   padding: 0px;
 }
-.newsletter button {
+.newsletter .boton-suscribir {
   font-size: medium;
   background: #fcc46f;
-  font-family: "montserrat";
+  font-family: "arial";
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
@@ -145,9 +149,15 @@ body section {
   cursor: pointer;
   animation: bounce 1s ease-in-out infinite;
 }
-.newsletter button:hover {
+.newsletter .boton-suscribir:hover {
   background-color: #fff;
   color: #f16d5e;
+}
+.newsletter input {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  width: 300px;
 }
 
 /*Gatos-Perros*/
@@ -195,7 +205,7 @@ body section {
   width: 500px;
   display: flex;
   flex-direction: column;
-  font-family: "montserrat";
+  font-family: "arial";
   background-color: #fcc46f;
   color: #a4670a;
   padding: 35px;
@@ -217,7 +227,7 @@ body section {
 .formulario [type=submit] {
   font-size: medium;
   background: #fcc46f;
-  font-family: "montserrat";
+  font-family: "arial";
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
@@ -281,7 +291,7 @@ body section {
   .boton {
     font-size: 12px;
     background: #fcc46f;
-    font-family: "montserrat";
+    font-family: "arial";
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 10px;
@@ -328,6 +338,50 @@ body section {
   /*registro*/
   .animacion-huellas {
     display: none;
+  }
+  /* Carrito*/
+  .carrito {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+  .carrito img {
+    width: 40%;
+  }
+  .carrito .producto-final {
+    box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .carrito .resumen {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .carrito .resumen button {
+    font-size: medium;
+    background: #fcc46f;
+    font-family: "arial";
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    padding-inline: 15px;
+    cursor: pointer;
+  }
+  .carrito .resumen button:hover {
+    background-color: #f16d5e;
+  }
+  .carrito .resumen p {
+    margin-left: 0px;
+  }
+  .otros-portada {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
   }
 }
 /*COMPUTADORA*/
@@ -395,6 +449,54 @@ body section {
   .animacion-huellas {
     display: inline;
   }
+  /* Carrito*/
+  .carrito {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 25px;
+  }
+  .carrito img {
+    width: 25%;
+  }
+  .carrito .producto-final {
+    display: flex;
+    box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .carrito .resumen {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .carrito .resumen button {
+    font-size: medium;
+    background: #fcc46f;
+    font-family: "arial";
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    padding-inline: 15px;
+    cursor: pointer;
+  }
+  .carrito .resumen button:hover {
+    background-color: #f16d5e;
+  }
+  .carrito .resumen p {
+    margin-left: 0px;
+  }
+  /* página-otras mascotas*/
+  .otros-portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 15px;
+    gap: 15px;
+  }
 }
 /*Botón Newsletter-inddex */
 @keyframes bounce {
@@ -433,7 +535,7 @@ body section {
 /*características flex para celular */
 footer {
   background-color: #ecd7bc;
-  font-family: "montserrat";
+  font-family: "arial";
   padding: 40px 15px 15px 15px;
 }
 footer .logo-pie {
@@ -444,6 +546,36 @@ footer .redes-sociales img {
   width: 32px;
   margin-inline: 5px;
   justify-content: center;
+}
+
+.otros-portada div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.otros-portada p {
+  font-family: tahoma;
+  font-weight: 700;
+}
+.otros-portada img {
+  width: 40%;
+}
+
+.peces-div {
+  background-color: #dca865;
+}
+
+.hamsters-div {
+  background-color: #fcc46f;
+}
+
+.aves-div {
+  background-color: #f0c2cf;
+}
+
+.conejos-div {
+  background-color: #f3f581;
 }
 
 /*# sourceMappingURL=style.css.map */

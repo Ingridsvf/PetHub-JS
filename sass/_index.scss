@@ -2,6 +2,7 @@
 @import "variables";
 
 body {
+    font-family: $font;
     p {
     font-family: $font;
     display: block;
@@ -28,6 +29,8 @@ section {
 
 .beneficios {
     @include beneficios-flex;
+    margin: 30px;
+    border-radius: 15px;;
     img {
     height: 35px;
     padding-right: 10px;
@@ -40,6 +43,9 @@ figure {
 }
 
 }
+
+
+
 
 /*sección lo más vendido*/
 .galeria-productos {
@@ -54,7 +60,7 @@ img {
     padding: 15px;
     box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
     .boton {
-    @include button (medium);
+    @include button (small);
      &:hover{
         background-color:$secundary-color;
       }
@@ -92,7 +98,7 @@ cursor: pointer;
     background-color: #f16d5e;
     padding: 0px;
 
-    button {
+   .boton-suscribir {
       @include button(medium);
       animation:bounce 1s ease-in-out infinite;
       &:hover{
@@ -100,6 +106,12 @@ cursor: pointer;
         color:#f16d5e;
       }
     }
+    input
+{border-radius: 5px;
+padding: 05px;
+border:none;
+width: 300px;
+}
 }
 
 
