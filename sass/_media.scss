@@ -84,7 +84,17 @@ h1 {
     img {
         width: 40%;
     }
+
+    .producto-final {
+        display: flex;
+        flex-direction: column;
+        p{
+            margin-left: 0px;
+        }
+        }
 }
+
+
 /* página-otras mascotas*/
 .otros-portada {
     display: grid;
@@ -205,6 +215,13 @@ h1 {
     img {
         width: 25%;
     }
+    .producto-final {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+
+
 }
 
 

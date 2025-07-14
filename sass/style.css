@@ -369,6 +369,13 @@ body section {
   .carrito img {
     width: 40%;
   }
+  .carrito .producto-final {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrito .producto-final p {
+    margin-left: 0px;
+  }
   /* página-otras mascotas*/
   .otros-portada {
     display: grid;
@@ -467,6 +474,11 @@ body section {
   }
   .carrito img {
     width: 25%;
+  }
+  .carrito .producto-final {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   /* página-otras mascotas*/
   .otros-portada {
@@ -589,6 +601,7 @@ footer .redes-sociales img {
 /*características flex para celular */
 .producto-final {
   display: flex;
+  align-items: center;
   box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 20px;
