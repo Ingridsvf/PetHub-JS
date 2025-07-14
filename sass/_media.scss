@@ -56,7 +56,7 @@ footer {
     height: 150px;
 }
 h1 {
-    font-size: medium;
+    font-size: large;
 
 }
 
@@ -104,17 +104,35 @@ h1 {
         }
         }
 }
+/* página-otras mascotas*/
 .otros-portada {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
     gap: 15px;}
 
-
+/*Página - Ofertas */
+.contenedor-oferta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    img {
+        width: 100%;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 }
 
 
 
 /*COMPUTADORA*/
+
 /*Footer*/
 @media (min-width: 1024px) {
     footer {
@@ -180,7 +198,7 @@ p{
     height: 300px;
 }
 h1 {
-    font-size: xx-large;
+    font-size: xx-large
 }
 
 /*Tiendas*/
@@ -234,4 +252,21 @@ h1 {
     grid-template-rows: auto;
     padding: 15px;
     gap: 15px;}
+
+
+/*Página - Ofertas */
+.contenedor-oferta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    img {
+        width: 100%;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 }
