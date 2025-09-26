@@ -50,7 +50,7 @@ Ancho: "12cm"}
 
 
 let carrito;
-const guardadoEnLocalStorage = JSON.parse(localStorage.getItem("productos-carrito"));
+const guardadoEnLocalStorage = JSON.parse(localStorage.getItem("productos-carrito")) || [];
 if (guardadoEnLocalStorage){
     carrito = guardadoEnLocalStorage;
 } else {
@@ -92,6 +92,7 @@ function botonAgregarProducto () {
 /*AGREGANDO PRODUCTO AL CARRITO*/
 function añadirAlCarrito (botonId){
     let productoElegido = productosIndex.find(producto => producto.id === botonId);
+
 if (carrito.some(producto => producto.id === botonId)) {
     const index = carrito.findIndex (producto => producto.id === botonId);
     carrito [index].cantidad++;

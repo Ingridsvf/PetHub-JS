@@ -5,13 +5,17 @@
 
 /*CELULARES*/
 @media (min-width: 300px) {
+    body {
+        height: 100vh;
+    }
 footer {
         display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    gap: 10px}
+    gap: 10px;
+margin-top: auto;}
    
     .contenedor-inferior {
     display: flex;
@@ -126,7 +130,11 @@ h1 {
 
 /*Footer*/
 @media (min-width: 1024px) {
+    body {
+        height: 100vh;
+    }
     footer {
+        margin-top: auto;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: 200px 50px;
@@ -136,6 +144,7 @@ h1 {
     text-align: justify;
     align-items: start;
     padding-top: 30px;
+
     }
 
 .libro-reclamaciones {

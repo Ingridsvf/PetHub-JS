@@ -1,5 +1,6 @@
 @use "variables";
 @import "mixin";
+
 .producto-tarjeta {
         display: flex;
         flex-direction: column;
@@ -51,5 +52,7 @@
     font-size: 20px;
     border: none;
     background-color: transparent;
-    color: #9b9a99;
+    color: #d29252;
     }
+
+   

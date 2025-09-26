@@ -1,10 +1,10 @@
-let productosCarrito = JSON.parse(localStorage.getItem("productos-carrito"));
+let productosCarrito = JSON.parse(localStorage.getItem("productos-carrito")) || [];
 const carritoVacio = document.querySelector("#mensaje-vacio");
 const seccionCompleta = document.querySelector (".seccion-carro");
 
 
 function verCarrito (){
-seccionCompleta.innerHTML = "";
+seccionCompleta.innerHTML = [];
 
 if (productosCarrito.length !== 0) {
 
