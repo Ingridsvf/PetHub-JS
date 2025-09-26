@@ -477,8 +477,7 @@ body section {
   }
   .carrito .producto-final {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
   }
   /* página-otras mascotas*/
   .otros-portada {
@@ -599,12 +598,28 @@ footer .redes-sociales img {
 /*Sección-beneficios-inicio*/
 /*botones*/
 /*características flex para celular */
-.producto-final {
+.producto-tarjeta {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 20px;
+  margin: 20px;
+}
+
+.descripcion {
+  display: flex;
+  align-items: center;
+}
+
+.divboton {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(165, 164, 164);
+}
+
+.nombre-product {
+  font-weight: 700;
 }
 
 .resumen {
@@ -632,6 +647,19 @@ footer .redes-sociales img {
 }
 .resumen p {
   margin-left: 0px;
+}
+
+.mensaje-vacio {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.boton-eliminar {
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: #9b9a99;
 }
 
 /*# sourceMappingURL=style.css.map */
