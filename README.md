@@ -7,20 +7,20 @@ Sitio web estático de ejemplo para una tienda de mascotas (PetHub). Incluye pá
 Este proyecto es una pequeña tienda front-end que muestra productos/ofertas para mascotas, permite añadir artículos a un carrito y navegar entre páginas estáticas. Está pensado como una plantilla educativa o demo para practicar HTML, CSS (Sass) y JavaScript.
 
 ## Estructura del proyecto
-
-`index.html` — Página principal.
-📁 `imagenes/` — Imágenes usadas en la web.
-📁`js/` — Lógica JavaScript principal:
-  - `array.json` — Datos de productos (JSON).
-  - `comprar.js` — Lógica relacionada con la compra/añadir productos.
-  - `notificaciones.js` — Notificaciones al usuario.
-  - `vercarrito.js` — Funcionalidad del carrito (ver/gestionar artículos).
-📁`paginas/` — Páginas internas (carrito, gatos, perros, ofertas, registro, gracias, tiendas, otras mascotas, petlovers).
-📁`sass/` — Archivos Sass/SCSS (partials y `style.scss`).
-  - `_variables.scss`, `_mixins.scss`, `_header.scss`, `_footer.scss`, `_carrito.scss`, `_formulario.scss`, `_ofertas.scss`, `_otrasmascotas.scss`, `_animaciones.scss`, `_media.scss` — parciales y estilos organizados.
-  - `style.scss` — archivo principal que importa parciales y compila a `style.css`.
-- `style.css` — CSS compilado (generado a partir de `sass/style.scss`).
-
+```
+index.html — Página principal.
+📁 imagenes/ — Imágenes usadas en la web.
+📁js/` — Lógica JavaScript principal:
+  - array.json — Datos de productos (JSON).
+  - comprar.js — Lógica relacionada con la compra/añadir productos.
+  - notificaciones.js — Notificaciones al usuario.
+  - vercarrito.js — Funcionalidad del carrito (ver/gestionar artículos).
+📁paginas/ — Páginas internas (carrito, gatos, perros, ofertas, registro, gracias, tiendas, otras mascotas, petlovers).
+📁sass/ — Archivos Sass/SCSS (partials y style.scss).
+  - _variables.scss, _mixins.scss, _header.scss, _footer.scss, _carrito.scss, _formulario.scss, _ofertas.scss, _otrasmascotas.scss, _animaciones.scss, _media.scss — parciales y estilos organizados.
+  - style.scss` — archivo principal que importa parciales y compila a style.css.
+- style.css — CSS compilado (generado a partir de sass/style.scss).
+```
 ## Principales funcionalidades
 
 - Listado de productos (desde `array.json`).
