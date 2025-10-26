@@ -1,20 +1,18 @@
 @use "variables";
 @import "mixin";
 
+
+
 .producto-tarjeta {
-        display: flex;
-        flex-direction: column;
+        
         box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
         padding: 20px;
-        margin: 20px;
+        margin: 20px 0;
      
         }
 
-        .descripcion {
-        display: flex;
-        align-items: center;
-        }
+        
         .divboton {
             display: flex;
             justify-content:space-between;
@@ -52,7 +50,16 @@
     font-size: 20px;
     border: none;
     background-color: transparent;
-    color: #d29252;
+    color: #999898;
     }
 
+.aumentar, .restar{
+    border-radius: 5px;
+    border: none;
+    background-color: #d6d6d6;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+   padding: 0px 5px;
    
+}

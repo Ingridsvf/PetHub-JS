@@ -51,7 +51,7 @@
       
 <div class="contenedor-iconos">
     <a class="iconos" href="../paginas/registro.html"> <img src="../imagenes/registrarse.png" alt="Registrarse"></a>
-    <a class="iconos" href="../paginas/carrito.html"> <img src="../imagenes/carrito.png" alt="Carrito"></a> 
+    <a id="carrito-icon" class="iconos" href="../paginas/carrito.html"> <img src="../imagenes/carrito.png" alt="Carrito"> <span class="circulo">0</span></a> 
   </div>
   </div>
   
@@ -60,42 +60,14 @@
     </header>
 
 <!--Contenido-->
-<main>
+<main class="espacio-main">
 <div id="mensaje-vacio">
   <!--<h4>Tu carrito está vacío <i class="bi bi-emoji-frown"></i></h4>-->
 </div>
    
 
 <section class="seccion-carro">
- <!--  Productos en carrito y total en JS
-   
-  <div class="carrito">
-  <div class="carro">
-    <h4>Carro</h4>
-    <div id="productos-carrito">
-      <div class="producto-final">
-        
-            <img src="../imagenes/cama-gato.jpg" alt="cama para gato">
-            <p>Cama para gato color rosado <br> Tamaño: 50x40x70</p>
-          <p>Unidades <br> 1</p>
-          <p>Total <br> S/65</p>
-          Contenido
-        </div> 
-        </div>
-</div>
-
-<div class="total">
-  <h4>Resumen de la orden </h4>
-        <div class="resumen">
-            <p> Productos (1)<hr> 
-            Descuentos <hr>
-        Total: S/ 65.00</p>
-
-            <a href="../paginas/gracias.html"><button class="boton"> Pagar </button></a>
-        </div>
-        </div>
-
-        </div>-->
+ <!--  Productos en carrito y total en JS-->
       </section>
 
 
@@ -132,8 +104,9 @@
 
  </footer>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-<script src="../comprar.js"></script>
-     <script src="../vercarrito.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="../js/comprar.js"></script>
+<script src="../js/vercarrito.js" type="module"></script>
 </body>
 
 </html>

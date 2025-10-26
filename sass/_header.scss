@@ -33,3 +33,22 @@ header {
     justify-content:space-around;
 }
 }
+
+.contenedor-iconos {
+    position: relative;
+}
+
+.circulo {
+    top: -6px;
+    right: 0%;
+    border-radius: 100%;
+    background-color: #f16d5e;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }

@@ -1,20 +1,208 @@
 @charset "UTF-8";
+/*Botón Newsletter-inddex */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*Registro */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(300px) translateY(-300px);
+  }
+}
+/*Sección-beneficios-inicio*/
+/*botones*/
+/*características flex para celular */
+.producto-tarjeta {
+  box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.divboton {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(165, 164, 164);
+}
+
+.nombre-product {
+  font-weight: 700;
+}
+
+.resumen {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+.resumen button {
+  font-size: medium;
+  background: #fcc46f;
+  font-family: "arial";
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  padding-inline: 15px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 8px;
+}
+.resumen button:hover {
+  background-color: #f16d5e;
+}
+.resumen p {
+  margin-left: 0px;
+}
+
+.mensaje-vacio {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.boton-eliminar {
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: #999898;
+}
+
+.aumentar, .restar {
+  border-radius: 5px;
+  border: none;
+  background-color: #d6d6d6;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  padding: 0px 5px;
+}
+
+/*Sección-beneficios-inicio*/
+/*botones*/
+/*características flex para celular */
+footer {
+  background-color: #ecd7bc;
+  font-family: "arial";
+  padding: 40px 15px 15px 15px;
+}
+footer .logo-pie {
+  width: 250px;
+  padding: 30px;
+}
+footer .redes-sociales img {
+  width: 32px;
+  margin-inline: 5px;
+  justify-content: center;
+}
+
+/*Sección-beneficios-inicio*/
+/*botones*/
+/*características flex para celular */
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #ded6f1, #ecebed);
+}
+.formulario h2 {
+  color: #fff;
+}
+.formulario form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  font-family: "arial";
+  background-color: #fcc46f;
+  color: #a4670a;
+  padding: 35px;
+  border-radius: 25px;
+  gap: 5px;
+}
+.formulario .checkbox {
+  display: flex;
+  gap: 10px;
+}
+.formulario input {
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+}
+.formulario input:hover {
+  background-color: #fae882;
+}
+.formulario [type=submit] {
+  font-size: medium;
+  background: #fcc46f;
+  font-family: "arial";
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  padding-inline: 15px;
+  cursor: pointer;
+  background-color: #CC9933;
+}
+
+.animacion-huellas {
+  width: 20%;
+}
+.animacion-huellas img {
+  width: 35%;
+  padding-left: 50px;
+}
+.animacion-huellas .izquierda {
+  animation: fade 9s infinite, mover 9s steps(5) infinite;
+  animation-delay: 0s;
+}
+.animacion-huellas .derecha {
+  animation: fade 9s infinite, mover 9s steps(5) infinite;
+  animation-delay: 1s;
+}
+.animacion-huellas .izquierda2 {
+  animation: fade 9s infinite, mover 9s steps(5) infinite;
+  animation-delay: 1.5s;
+}
+.animacion-huellas .derecha2 {
+  animation: fade 9s infinite, mover 9s steps(5) infinite;
+  animation-delay: 2s;
+}
+
 header {
   background-color: #ecd7bc;
 }
-
 header .nav-link {
   color: #CC9933;
 }
-
 header .nav-link:hover {
   color: #FFF;
 }
-
 header .navbar-brand {
   width: 100px;
 }
-
 header .iconos img {
   width: 36px;
   padding-right: 12px;
@@ -33,29 +221,42 @@ header .iconos img {
     justify-content: space-around;
   }
 }
-/*Sección-beneficios-inicio*/
-/*botones*/
-/*características flex para celular */
+.contenedor-iconos {
+  position: relative;
+}
+
+.circulo {
+  top: -6px;
+  right: 0%;
+  border-radius: 100%;
+  background-color: #f16d5e;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*Sección-beneficios-inicio*/
 /*botones*/
 /*características flex para celular */
 body {
   font-family: "arial";
 }
-
 body p {
   font-family: "arial";
   display: block;
   margin: 0 auto;
 }
-
 body h1 {
   color: #FFF;
   display: grid;
   align-items: center;
   font-weight: 700;
 }
-
 body h2 {
   text-align: center;
   font-family: "arial";
@@ -63,9 +264,8 @@ body h2 {
   font-weight: 800;
   color: #CC9933;
 }
-
 body section {
-  padding: 30px;
+  padding: 35px;
 }
 
 .beneficios {
@@ -77,17 +277,9 @@ body section {
   margin: 30px;
   border-radius: 15px;
 }
-
 .beneficios img {
   height: 35px;
   padding-right: 10px;
-}
-
-.beneficios figure {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
 }
 
 /*sección lo más vendido*/
@@ -95,18 +287,15 @@ body section {
   display: grid;
   text-align: center;
 }
-
 .galeria-productos img {
   width: 100%;
 }
-
 .galeria-productos .producto {
   border-radius: 12px;
   background-color: #FFF;
   padding: 15px;
   box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
 }
-
 .galeria-productos .producto .boton {
   font-size: small;
   background: #fcc46f;
@@ -118,7 +307,6 @@ body section {
   padding-inline: 15px;
   cursor: pointer;
 }
-
 .galeria-productos .producto .boton:hover {
   background-color: #CC9933;
 }
@@ -127,7 +315,6 @@ body section {
 .blog {
   background-color: #e0f0f4;
 }
-
 .blog figure {
   display: flex;
   flex-direction: column;
@@ -136,13 +323,11 @@ body section {
   font-family: "arial";
   font-weight: 700;
 }
-
 .blog img {
   width: 80%;
   border-radius: 15px;
   cursor: pointer;
 }
-
 .blog img:hover {
   transform: scale(1.1);
 }
@@ -154,7 +339,6 @@ body section {
   background-color: #f16d5e;
   padding: 0px;
 }
-
 .newsletter .boton-suscribir {
   font-size: medium;
   background: #fcc46f;
@@ -167,12 +351,10 @@ body section {
   cursor: pointer;
   animation: bounce 1s ease-in-out infinite;
 }
-
 .newsletter .boton-suscribir:hover {
   background-color: #fff;
   color: #f16d5e;
 }
-
 .newsletter input {
   border-radius: 5px;
   padding: 5px;
@@ -197,17 +379,14 @@ body section {
   gap: 8px;
   font-weight: 700;
 }
-
 .sedes-div figure p {
   font-weight: 400;
 }
-
 .sedes-div img {
   width: 25%;
   border-radius: 15px;
   cursor: pointer;
 }
-
 .sedes-div img:hover {
   transform: scale(1.1);
 }
@@ -217,7 +396,6 @@ body section {
   display: flex;
   justify-content: center;
 }
-
 .seccion-gracias .contenedor-gracias {
   display: flex;
   flex-direction: column;
@@ -229,7 +407,6 @@ body section {
   border-radius: 12px;
   padding: 100px 15px;
 }
-
 .seccion-gracias .contenedor-gracias img {
   width: 200px;
 }
@@ -237,91 +414,11 @@ body section {
 /*Sección-beneficios-inicio*/
 /*botones*/
 /*características flex para celular */
-.formulario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(180deg, #ded6f1, #ecebed);
-}
-
-.formulario h2 {
-  color: #fff;
-}
-
-.formulario form {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  font-family: "arial";
-  background-color: #fcc46f;
-  color: #a4670a;
-  padding: 35px;
-  border-radius: 25px;
-  gap: 5px;
-}
-
-.formulario .checkbox {
-  display: flex;
-  gap: 10px;
-}
-
-.formulario input {
-  border-radius: 10px;
-  padding: 5px;
-  border: none;
-}
-
-.formulario input:hover {
-  background-color: #fae882;
-}
-
-.formulario [type=submit] {
-  font-size: medium;
-  background: #fcc46f;
-  font-family: "arial";
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 10px;
-  padding: 5px;
-  padding-inline: 15px;
-  cursor: pointer;
-  background-color: #CC9933;
-}
-
-.animacion-huellas {
-  width: 20%;
-}
-
-.animacion-huellas img {
-  width: 35%;
-  padding-left: 50px;
-}
-
-.animacion-huellas .izquierda {
-  animation: fade 9s infinite, mover 9s steps(5) infinite;
-  animation-delay: 0s;
-}
-
-.animacion-huellas .derecha {
-  animation: fade 9s infinite, mover 9s steps(5) infinite;
-  animation-delay: 1s;
-}
-
-.animacion-huellas .izquierda2 {
-  animation: fade 9s infinite, mover 9s steps(5) infinite;
-  animation-delay: 1.5s;
-}
-
-.animacion-huellas .derecha2 {
-  animation: fade 9s infinite, mover 9s steps(5) infinite;
-  animation-delay: 2s;
-}
-
-/*Sección-beneficios-inicio*/
-/*botones*/
-/*características flex para celular */
 /*CELULARES*/
 @media (min-width: 300px) {
+  body {
+    height: 100vh;
+  }
   footer {
     display: flex;
     justify-content: center;
@@ -329,6 +426,7 @@ body section {
     text-align: center;
     flex-direction: column;
     gap: 10px;
+    margin-top: auto;
   }
   .contenedor-inferior {
     display: flex;
@@ -337,6 +435,17 @@ body section {
   }
   .libro-reclamaciones {
     width: 30%;
+  }
+  .beneficios {
+    gap: 15px;
+  }
+  .beneficios figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    text-align: center;
   }
   /*sección lo más vendido*/
   .galeria-productos {
@@ -396,21 +505,40 @@ body section {
     display: none;
   }
   /* Carrito*/
+  .seccion-carro {
+    padding: 35px;
+  }
   .carrito {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    gap: 20px;
+    gap: 25px;
+  }
+  .carrito .producto-tarjeta {
+    width: 100%;
+    align-items: center;
   }
   .carrito img {
-    width: 40%;
+    width: 50%;
   }
-  .carrito .producto-final {
+  .carrito .descripcion {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
-  .carrito .producto-final p {
+  .carrito .descripcion p {
     margin-left: 0px;
+  }
+  .carrito .descripcion .totaldiv {
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    width: 100%;
+  }
+  .carrito .descripcion div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   /* página-otras mascotas*/
   .otros-portada {
@@ -440,6 +568,7 @@ body section {
 /*Footer*/
 @media (min-width: 1024px) {
   footer {
+    padding-top: 72px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: 200px 50px;
@@ -457,6 +586,13 @@ body section {
     grid-column: 4/4;
     display: flex;
     justify-content: right;
+  }
+  .beneficios figure {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
   }
   /*sección lo más vendido*/
   .galeria-productos {
@@ -502,18 +638,32 @@ body section {
     display: inline;
   }
   /* Carrito*/
+  .seccion-carro {
+    padding: 70px;
+  }
   .carrito {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
-    gap: 25px;
   }
   .carrito img {
-    width: 25%;
+    width: 100%;
+    padding: 10px;
   }
-  .carrito .producto-final {
+  .carrito .descripcion {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: auto;
+  }
+  .carrito .descripcion div {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    width: 1fr;
+  }
+  .carrito .totaldiv {
+    display: flex;
+    width: auto;
   }
   /* página-otras mascotas*/
   .otros-portada {
@@ -539,56 +689,19 @@ body section {
     align-items: center;
   }
 }
-/*Botón Newsletter-inddex */
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-/*Registro */
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes mover {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    transform: translateX(300px) translateY(-300px);
-  }
-}
 /*Sección-beneficios-inicio*/
 /*botones*/
 /*características flex para celular */
-footer {
-  background-color: #ecd7bc;
-  font-family: "arial";
-  padding: 40px 15px 15px 15px;
-}
-
-footer .logo-pie {
-  width: 250px;
-  padding: 30px;
-}
-
-footer .redes-sociales img {
-  width: 32px;
-  margin-inline: 5px;
+.portada-oferta {
+  background-color: #f16d5e;
+  color: #fff;
+  font-family: tahoma;
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+.portada-oferta img {
+  width: 25%;
 }
 
 .otros-portada div {
@@ -597,12 +710,10 @@ footer .redes-sociales img {
   justify-content: center;
   cursor: pointer;
 }
-
 .otros-portada p {
   font-family: tahoma;
   font-weight: 700;
 }
-
 .otros-portada img {
   width: 40%;
 }
@@ -622,90 +733,5 @@ footer .redes-sociales img {
 .conejos-div {
   background-color: #f3f581;
 }
-
-.portada-oferta {
-  background-color: #f16d5e;
-  color: #fff;
-  font-family: tahoma;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.portada-oferta img {
-  width: 25%;
-}
-
-/*Sección-beneficios-inicio*/
-/*botones*/
-/*características flex para celular */
-.producto-tarjeta {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px;
-}
-
-.descripcion {
-  display: flex;
-  align-items: center;
-}
-
-.divboton {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(165, 164, 164);
-}
-
-.nombre-product {
-  font-weight: 700;
-}
-
-.resumen {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.resumen button {
-  font-size: medium;
-  background: #fcc46f;
-  font-family: "arial";
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 10px;
-  padding: 5px;
-  padding-inline: 15px;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 8px;
-}
-
-.resumen button:hover {
-  background-color: #f16d5e;
-}
-
-.resumen p {
-  margin-left: 0px;
-}
-
-.mensaje-vacio {
-  display: flex;
-  justify-content: center;
-  padding: 5%;
-}
-
-.boton-eliminar {
-  font-size: 20px;
-  border: none;
-  background-color: transparent;
-  color: #9b9a99;
-}
-
-
 
 /*# sourceMappingURL=style.css.map */
