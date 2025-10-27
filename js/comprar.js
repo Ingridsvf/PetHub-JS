@@ -10,7 +10,7 @@ function tarjetaProducto (productosCategoria) {
         const divProductos = document.createElement("div");
         divProductos.classList.add ("producto");
         divProductos.innerHTML =
-        `<img src=".${producto.imagen}" alt="${producto.nombre}">
+        `<img src="${producto.imagen}" alt="${producto.nombre}">
             <p>${producto.nombre}</p>
             <h3>S/${producto.precio}</h3>
             <button class="boton" id="${producto.id}">Añadir al carrito</button>`;
