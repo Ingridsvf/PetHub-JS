@@ -28,7 +28,7 @@ divcarro.innerHTML =`
 <div class= "divboton"> <div class="nombre-product">${product.nombre} </div> 
 <button class="boton-eliminar" id="${product.id}" data-nombre="${product.nombre}"> <i class="bi bi-trash"></i></button></div>       
           <div class="descripcion">
-            <div><img src="../${product.imagen}" alt="${product.nombre}"></div>
+            <div><img src="${product.imagen}" alt="${product.nombre}"></div>
           <div> <p><br> ${product.descripcion}</p></div>
             <div><p><br> S/${product.precio}</p> </div>
             <br><div class="totaldiv">
