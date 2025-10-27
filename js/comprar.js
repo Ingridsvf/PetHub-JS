@@ -10,7 +10,7 @@ function tarjetaProducto (productosCategoria) {
         const divProductos = document.createElement("div");
         divProductos.classList.add ("producto");
         divProductos.innerHTML =
-        `<img src="/${producto.imagen}" alt="${producto.nombre}">
+        `<img src="../${producto.imagen}" alt="${producto.nombre}">
             <p>${producto.nombre}</p>
             <h3>S/${producto.precio}</h3>
             <button class="boton" id="${producto.id}">Añadir al carrito</button>`;
@@ -23,7 +23,7 @@ function tarjetaProducto (productosCategoria) {
 
 async function mostrarProductos() {
 try {
-  const response = await fetch("./array.json" ||"../array.json" );
+  const response = await fetch("./array.json" ||"/array.json" );
   const data = await response.json();
   productosArray = data;
 //Filtrado de productos por categoría
