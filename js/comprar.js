@@ -23,7 +23,7 @@ function tarjetaProducto (productosCategoria) {
 
 async function mostrarProductos() {
 try {
-  const response = await fetch("/PetHub-JS/array.json");
+  const response = await fetch("/pethub/array.json");
   const data = await response.json();
   productosArray = data;
 //Filtrado de productos por categoría
